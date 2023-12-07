@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* giving container 100%  screen size*/
+.container{
+    width: 100%;
+    height: 100vh; 
+    /* background-color: rgb(57, 113, 153); */
+    background-color: var(--seco-col);
+}
+/* specifying wrapper class properties with gap */
+.container .wrapper{
+    width: auto;
+    height: auto;
+    gap: 5vh    ;
+    /* border: 1px solid white; */
+}
+/* specifying screen attributes and properties */
+.wrapper .screen{
+    width: 30vh;
+    height: 30vh;
+    border: 5px solid var(--seco-col);
+    border-radius: 50%;
+    border-top: 1vh solid var(--prim-col);
+    border-bottom: 1vh solid var(--prim-col);
+    font-size: 4vh;
+    color: var(--prim-col);
+}
+
+/* giving gap among buttons */
+.wrapper .btns{
+    gap: 1vw;
+}
+/* specifying button attributes and properties */
+
+.btn{
+    padding: 1vh 1vw;
+    border-radius: 2vh;
+    border: none;
+    color: var(--seco-col);
+    background-color: var(--prim-col);
+    font-size: 2vh;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* giving effects  on hover*/
+.btn:hover{
+    border: 2px solid var(--prim-col);
+    background-color: transparent;
+    color: var(--prim-col);
+}
+
+
+/* making the UI responsive using media queries */
+@media (max-width : 1200px) {
+    .screen{
+        width: 35vh;
+        height: 30vh;
+        font-size: 3vh;
+    }
+}
+@media (max-width : 700px) {
+    .screen{
+        width: auto;
+        height: auto;
+        font-size: 3vh;
+    }
+    .btn{
+        padding: 1vh 1vw;
+        border-radius: 2vh;
+     
+        
+    }
+}

@@ -1,0 +1,21 @@
+/* creating root elemtens  */
+
+:root{
+    --prim-col :  #a2d2ff;
+    --seco-col : #003049;
+ 
+}
+
+/* specifying predifined classes */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
