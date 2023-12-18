@@ -39,7 +39,7 @@
 .btn{
     padding: 1vh 1vw;
     border-radius: 2vh;
-    border: none;
+    border: 2px solid transparent;
     color: var(--seco-col);
     background-color: var(--prim-col);
     font-size: 2vh;
